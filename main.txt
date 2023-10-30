@@ -1,0 +1,53 @@
+// Array functions are used to manipulate or transform the values in the array.
+
+
+// map - iterates each element in the array and returns a new array of same length.
+// forEach - iterates each element in the array but doesnt return array.
+// find - iterates each element in the array and returns only the first matched element.
+// filter - iterates each element in the array and returns all the matched elements.
+// reduce - iterates each elements in the array and performs accumulations in order to return a single value.
+arr.reduce((accumulatorValue, currentValue) => {
+    return accumulatorValue + currentValue;
+}, intialAccumulatorValue);
+
+[1, 2 ,3 ,4 ,5];
+arr.reduce((sum, currentValue) => {
+    return sum + currentValue;
+})
+
+// slice - it partitions the array and returns a portion of the array. 
+slice(1, 5);
+slice(1, -3);
+slice(4);
+
+
+// push - it adds a new element at the last.
+// pop - it removes the elements from the last.
+// unswift - it adds a new element in the beginning.
+// swift - it removes the elements from the beginning
+// splice - it adds a new element or list of new elements in between array, by either removing some elements or not.
+[1, 2 ,3 ,4 , 5, 6];
+splice(4, 0, 100); - [1, 2 ,3 ,4 ,100, 5, 6];
+splice(4, 2, 100); - [1, 2 ,3 ,4 ,100];
+
+// split - "India won the match against England." -> ["India", "won", "the", "match", "against", "England."]
+myStr.split(" ");
+// join - ["India", "won", "the", "match", "against", "England."] -> "India--won--the--match--against--England."
+myArr.join("--")
+
+
+// Every - iterates each element and return true if every elements satisfy the condition and if any one element is not satisfying the condtion the output will be false.
+// Some  - iterates each element and return true if any one of the elements satisfies the condition and if none of the elements is not satisfying the condtion the output will be false.
+
+// find - returns the first matched value.
+// FindIndex - returns the index of first matched value.
+// findLast - returns the last matched value.
+// findLastIndex - returns the index of last matched value.
+
+
+// sort - sorts the elements in the array and overrides the original array. if asc ->  return a - b; if desc ->  return b - a;
+// fill - fills the element in the given range and overrides the original array.
+
+// Entries - it allow us to access all of its elements (VALUE and INDEX) in the form of iterator. We have to manually trigger the next value
+// Keys - it allow us to access all of its elements (INDEX) in the form of iterator. We have to manually trigger the next value
+// Values - it allow us to access all of its elements (VALUE) in the form of iterator. We have to manually trigger the next value
